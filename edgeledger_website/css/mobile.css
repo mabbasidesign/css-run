@@ -1,0 +1,70 @@
+#what .items {
+ 
+}
+
+/* Align icon to left */
+#what .items .item {
+  
+}
+
+/* Position icon */
+#what .items .item i {
+  
+}
+
+/* Smartphones */
+@media(max-width: 500px) {
+  #navbar {
+    
+  }
+
+  #navbar .logo {
+    
+  }
+
+  #navbar ul {
+    
+  }
+
+  #showcase .showcase-content {
+    
+  }
+
+  #who {
+    
+  }
+
+  #who .who-img {
+    
+  }
+
+  #clients .items img {
+    
+  }
+
+  #clients .items div:last-child {
+    
+  }
+
+  #contact {
+    
+  }
+
+  #contact .map {
+    
+  }
+}
+
+@media(max-height: 568px) {
+  #showcase .showcase-content {
+    
+  }
+
+  .l-heading {
+    
+  }
+
+  .lead {
+    
+  }
+}
