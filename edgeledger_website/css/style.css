@@ -192,31 +192,34 @@ p {
 
 /* Section: Clients */
 #clients .items {
-  
+  display: flex;
 }
 
 #clients .items img {
-  
+  width: 60%;
+  margin: auto;
 }
 
 /* Section: Contact */
 #contact {
-  
+  display: flex;
 }
 
 #contact .map, #contact .contact-form {
-  
+  flex: 1;
 }
 
 #contact .contact-form .form-group {
-  
+  margin: 0.75rem;
+
 }
 
 #contact .contact-form label {
-  
+  display: block;
 }
 
 #contact .contact-form input,
 #contact .contact-form textarea {
- 
+ padding: 0.5rem;
+ width: 100%;
 }
