@@ -1,11 +1,71 @@
+:root{
+    --page-1-color: steelblue;
+    --page-2-color: tan;
+    --page-3-color: teal;
+    --page-4-color: slateblue;
+    --animate-speed: 1s;
+
+}
+
 body{
-    background: peru;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     color: #fff;
+    overflow: hidden;
 }
 
+.page-1 {background-color: var(--page-1-color)}
+.page-2 {background-color: var(--page-2-color)}
+.page-3 {background-color: var(--page-3-color)}
+.page-4 {background-color: var(--page-4-color)}
+
 .page{
-    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.page h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.page p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.page .btn{
+    color: #fff;
+    text-decoration: none;
+    background: rgb(172, 177, 180);
+    padding: 0.8rem 1.5rem;
+    transition: all  0.3s ease-in;
+}
+
+.page .btn:hover{
+    background: rgb(241, 171, 20);
+}
+
+.page-1 h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-bottom: 0.2rem;
+    transform: translateY(-1200px);
+    animation: heading var(--animate-speed) forwards
+    ease-in-out;
+}
+
+@keyframes heading{
+    to {
+        transform: translateY(0);
+    }
 }
