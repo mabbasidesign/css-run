@@ -56,16 +56,25 @@ body{
 }
 
 .page-1 h1{
-    font-size: 3rem;
-    line-height: 3.5rem;
-    margin-bottom: 0.2rem;
     transform: translateY(-1200px);
     animation: heading var(--animate-speed) forwards
     ease-in-out;
 }
 
+.page-1 p{
+    transform: translateX(-1800px);
+    animation: heading var(--animate-speed) forwards
+    ease-in-out 1s;
+}
+
 @keyframes heading{
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes text{
+    to {
+        transform: translateX(0);
     }
 }
