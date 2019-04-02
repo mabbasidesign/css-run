@@ -1,4 +1,10 @@
-@import 'varibles';
+// @import 'varibles';
+$primary-color: steelblue;
+$secondary-color: skyblue;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$font-stack: Arial, Helvetica, sans-serif;
+$btn-back: #66638d;
 
 *{
     margin: 0;
@@ -10,4 +16,42 @@ body{
     color: $dark-color;
     font-family: $font-stack;
     line-height: 1.5;
+}
+
+header{
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+    h1{
+        text-align: center;
+    }
+}
+
+.section{
+    padding: 3rem;
+
+    h3{
+        font-size: 2rem;
+    }
+
+    &-a{
+        background: $primary-color;
+        color: #fff;
+    }
+
+    &-b{
+        background: $secondary-color;
+        color: #fff;
+    }
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    &-a{
+        background: $primary-color;
+        color: #fff;
+    }
 }
