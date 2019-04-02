@@ -45,13 +45,25 @@ header{
     }
 }
 
-a{
-    color: #333;
+%btn-shared{
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
-    padding: 1rem;
-    margin: 1rem;
-    &-a{
-        background: $primary-color;
+    margin-top: 1rem;
+}
+
+.btn{
+    &-light{
+        @extend %btn-shared;
+        background: $light-color;
+        color: #333;
+    }
+
+    &-dark{
+        @extend %btn-shared;
+        background: $dark-color;
         color: #fff;
     }
 }
