@@ -94,7 +94,9 @@ img{
     }
     //header inner
     &-inner{
-
+        background: $bg-image no-repeat 20% 30% / cover;
+        height: 5.5rem;
+        border-bottom: 3px solid $main-color;
     }
 }
 
@@ -199,6 +201,67 @@ img{
 }
 
 
+//About
+#about{
+    &-a{
+        .about-info{
+            display: grid;
+            grid-template-areas: 
+            'bioimage bio bio'
+            'aw1 aw2 aw3';
+            grid-gap: 1.2rem;
+        }
+
+        //Grid Area
+        .bio-image{
+            grid-area: bioimage;
+        }
+
+        .bio{
+            grid-area: bio;
+            border-left: 3px solid $main-color;
+            padding: 0.8rem;
+        }
+
+        .award-1{
+            grid-area: aw1
+        }
+
+        .award-2{
+            grid-area: aw2
+        }
+
+        .award-3{
+            grid-area: aw3
+        }
+
+        .award-1 .fas,
+        .award-2 .fas,
+        .award-3 .fas{
+            color: $main-color;
+            margin: 1rem;
+        }
+    
+    }
+    &-b{
+        .progress{
+            overflow: hidden;
+            height: 20px;
+            background: $medium-color;
+            border-radius: 5px;
+            margin-bottom: 0.3rem;
+
+            div{
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                background: $main-color;
+            }
+        }
+    }
+    }
+
+
 //Footer
 #main-footer{
     background: $dark-color;
@@ -220,7 +283,7 @@ img{
         line-height: 20px;
         text-align: center;
         padding: 0.5rem;
-        
+
         &:hover{
             background: $main-color;
         }
