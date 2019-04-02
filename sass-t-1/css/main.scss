@@ -1,4 +1,5 @@
 // @import 'varibles';
+@import 'function';
 $primary-color: steelblue;
 $secondary-color: skyblue;
 $light-color: #f4f4f4;
@@ -20,7 +21,8 @@ body{
 
 header{
     background: $dark-color;
-    color: $light-color;
+    // color: $light-color;
+    color: set-text-color($dark-color);
     padding: 1rem;
     h1{
         text-align: center;
@@ -59,11 +61,21 @@ header{
         @extend %btn-shared;
         background: $light-color;
         color: #333;
+
+        &:hover{
+            @include transform(rotate(20deg));
+            background-color: darken($light-color, 10%)
+        }
     }
 
     &-dark{
         @extend %btn-shared;
         background: $dark-color;
         color: #fff;
+
+        &:hover{
+            @include transform(rotate(-20deg));
+            background-color: lighten($dark-color, 10%)
+        }
     }
 }

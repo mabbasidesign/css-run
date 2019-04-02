@@ -12,7 +12,7 @@ body {
 
 header {
   background: #333;
-  color: #f4f4f4;
+  color: #fff;
   padding: 1rem;
 }
 
@@ -52,8 +52,20 @@ header h1 {
   color: #333;
 }
 
+.btn-light:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background-color: #dbdbdb;
+}
+
 .btn-dark {
   background: #333;
   color: #fff;
+}
+
+.btn-dark:hover {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  background-color: #4d4d4d;
 }
 /*# sourceMappingURL=main.css.map */
