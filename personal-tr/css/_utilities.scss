@@ -28,7 +28,7 @@
     }
     &-dark{
         @extend %btn-shared;
-        color: #333;
+        color: #fff;
         background-color: $dark-color;
     }
 }
@@ -37,6 +37,7 @@ button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover{
     background-color: $main-color;
+    color: #333;
 }
 
 //Backgrounds
